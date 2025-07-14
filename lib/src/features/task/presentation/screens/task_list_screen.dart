@@ -20,6 +20,7 @@ class TaskListScreen extends HookConsumerWidget {
             icon: const Icon(Icons.logout),
             onPressed: () async {
               await ref.read(authControllerProvider).signOut();
+        
             },
           ),
         ],
